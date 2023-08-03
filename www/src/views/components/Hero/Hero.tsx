@@ -14,12 +14,14 @@ export type HeroProps = {
 
 export function defaultProps(): HeroProps {
   return {
-    subTitle: "Pianotes",
-    title: "🎹 Pianotes - Sharing the Joy of Intelligent Music Education & Community."
+    subTitle: "🎹 Pianotes",
+    title: "Sharing the Joy of Music Education & Community."
   }
 }
 
 export default function Hero(props: HeroProps) {
+
+  const { title, subTitle } = props;
 
 
   function CallToActionPrimary() {
@@ -64,7 +66,19 @@ export default function Hero(props: HeroProps) {
     )
   }
 
-  const { title, subTitle } = props;
+  function Header() {
+    return (
+      <>
+       <h2 className="mb-5 text-lg text-orange-700 font-thin uppercase tracking-px">
+                {!subTitle ? defaultProps().subTitle : subTitle}
+              </h2>
+              <h1 className="mb-9 text-6xl md:text-8xl xl:text-10xl font-bold font-heading tracking-px-n leading-none">
+              {!title ? defaultProps().title : title}
+              </h1>
+      </>
+    )
+  }
+
 
     return (
         <section className="relative">
@@ -82,25 +96,23 @@ export default function Hero(props: HeroProps) {
         <div className="relative z-10 overflow-hidden pt-16">
           <div className="container px-4 mx-auto">
             <div className="text-center">
-              <p className="mb-5 text-sm text-indigo-600 font-semibold uppercase tracking-px">
-                {!subTitle ? defaultProps().subTitle : subTitle}
-              </p>
-              <h1 className="mb-9 text-6xl md:text-8xl xl:text-10xl font-bold font-heading tracking-px-n leading-none">
-              {!title ? defaultProps().title : title}
-              </h1>
+
+<Header/>
             <CallToActionPrimary/>
               <div className="relative max-w-max mx-auto">
                 <img
                   className="mx-auto transform hover:scale-105 transition ease-in-out duration-1000"
-                  src="flaro-assets/images/headers/dashboard.png"
+                  src="https://shuffle.dev/flaro-assets/images/headers/card.png"
                   alt=""
                 />
                 <img
                   className="hidden xl:block absolute -left-52 top-16"
-                  src="flaro-assets/images/headers/card.png"
+                  src="https://shuffle.dev/flaro-assets/images/headers/card.png"
                   alt=""
                 />
+                
               </div>
+
             </div>
           </div>
         </div>

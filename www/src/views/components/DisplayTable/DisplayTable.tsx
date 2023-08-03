@@ -1,6 +1,6 @@
 export default function DisplayTable() {
     return (
-        <section className="pt-28 pb-36 bg-black overflow-hidden">
+        <section className="pt-28 pb-36  overflow-hidden">
   <div className="container px-4 mx-auto">
     <h2 className="mb-6 text-6xl md:text-8xl xl:text-10xl text-white text-center font-bold font-heading tracking-px-n leading-none md:max-w-xl mx-auto">
       Try Flaro for Free

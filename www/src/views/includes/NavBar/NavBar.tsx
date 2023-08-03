@@ -1,7 +1,7 @@
 export default function NavBar() {
     return (
-        <div className="container mx-auto overflow-hidden">
-        <div className="relative z-20 flex items-center justify-between px-4 py-5 bg-transparent">
+        <div className="mb-20 container mx-auto overflow-hidden">
+        <div className="fixed w-full left-0 top-0 z-20 backdrop-blur-sm flex items-center justify-between px-4 py-5 bg-transparent">
           <div className="w-auto">
             <div className="flex flex-wrap items-center">
               <div className="w-auto mr-14">

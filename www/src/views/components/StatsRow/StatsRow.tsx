@@ -1,6 +1,6 @@
 export default function StatsRow() {
     return (
-        <section className="relative py-24 bg-white overflow-hidden">
+        <section className="relative py-24 overflow-hidden">
   <img
     className="absolute bottom-0 left-0"
     src="flaro-assets/images/numbers/gradient.svg"

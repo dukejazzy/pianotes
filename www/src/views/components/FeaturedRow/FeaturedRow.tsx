@@ -1,6 +1,6 @@
 export default function FeaturedRow() {
     return (
-        <section className="py-20 bg-white overflow-hidden">
+        <section className="py-20 overflow-hidden">
   <div className="container px-4 mx-auto">
     <div className="flex flex-wrap items-center -m-8">
       <div className="w-full md:w-1/3 p-8">
