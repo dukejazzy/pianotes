@@ -23,6 +23,7 @@
       "@/*": ["./src/*"],
       "@includes/*": ["./src/views/includes/*"],
       "@components/*": ["./src/views/components/*"],
+      "@typings/*": ["./src/models/typings/*"],
 
     }
   },

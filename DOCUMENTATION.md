@@ -1,3 +1,7 @@
 (load:docs/TITLE.md)
 (load:docs/USAGE.md)
+(load:docs/INSTALLATION.md)
+(load:docs/DEPENDENCIES.md)
+(load:docs/CONTRIBUTIONS.md)
+(load:docs/COPYRIGHT.md)
 (load:docs/LICENSE.md)
